@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**Created by NetaloTeamAndroid on 2020
+  ~ Company: Netacom.
+  ~  **/
+  -->
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navView"
+        style="@style/NvilabsTheme.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_72"
+        android:background="@color/white"
+        android:paddingTop="0dp"
+        android:theme="@style/NvilabsTheme.BottomNavigationView"
+        app:cardElevation="@dimen/dp_8"
+        app:elevation="@dimen/dp_8"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/all_style_bottom_navigation_item_icon"
+        app:itemTextColor="@color/all_style_bottom_navigation_item_text"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation" />
+</androidx.appcompat.widget.LinearLayoutCompat>
