@@ -1,6 +1,7 @@
 <resources>
+
     <!-- Base application theme. -->
-    <style name="Theme.MyTel" parent="NvilabsSdkAppTheme">
+    <style name="Theme.BaseKotlin" parent="SdkAppTheme">
         <item name="android:fontFamily">@font/font_sdk</item>
         <item name="fontFamily">@font/font_sdk</item>
     </style>

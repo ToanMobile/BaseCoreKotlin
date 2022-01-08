@@ -1,0 +1,19 @@
+<!--
+  ~ /**Created by NetaloTeamAndroid on 2020
+  ~ Company: Netacom.
+  ~  **/
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+  <group>
+    <clip-path
+        android:pathData="M0,0H16V16H0z"/>
+    <path
+        android:pathData="M14,3.211l-8.93,8.93 0.038,0.037 3.107,-0.016a0.645,0.645 0,0 1,0.643 0.643v0.536a0.645,0.645 0,0 1,-0.643 0.643L2.643,14A0.645,0.645 0,0 1,2 13.357l0.016,-5.571a0.645,0.645 0,0 1,0.643 -0.643h0.536a0.645,0.645 0,0 1,0.643 0.643l-0.016,3.107 0.037,0.037 8.93,-8.93z"
+        android:fillColor="#29b03c"/>
+  </group>
+</vector>

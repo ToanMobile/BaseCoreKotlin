@@ -15,7 +15,7 @@ object Build {
 
     object Brand {
         const val value = "brand"
-        const val MyTel = "MyTel"
+        const val MyApp = "app"
         const val Sdk = "Sdk"
     }
 }

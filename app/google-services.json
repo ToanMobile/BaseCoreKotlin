@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "186781365598",
+    "project_id": "basekotlin-f8498",
+    "storage_bucket": "basekotlin-f8498.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186781365598:android:15dca0ab70458989fb0bcf",
+        "android_client_info": {
+          "package_name": "com.toan_mobile.basekotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186781365598-12s9vmqpcie91hmr77k554mosn20lhi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE7Dr7TnCtRJR8gqn3_0N-OwMkJO71Umo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186781365598-12s9vmqpcie91hmr77k554mosn20lhi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186781365598:android:7af7273e2f74ac8efb0bcf",
+        "android_client_info": {
+          "package_name": "com.toan_mobile.basekotlin.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186781365598-12s9vmqpcie91hmr77k554mosn20lhi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE7Dr7TnCtRJR8gqn3_0N-OwMkJO71Umo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186781365598-12s9vmqpcie91hmr77k554mosn20lhi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

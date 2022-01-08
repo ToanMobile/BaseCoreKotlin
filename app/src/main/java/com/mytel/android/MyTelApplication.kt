@@ -6,7 +6,7 @@
 
 package com.mytel.android
 
-import com.nvilabs.sdk.core.BaseSDKApplication
+import com.toan_mobile.module.core.BaseSDKApplication
 
 /**Created by vantoan on 23,July,2020
 Company: Netacom.

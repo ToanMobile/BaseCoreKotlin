@@ -15,17 +15,17 @@ object AndroidConfig {
 object GradleConfig {
     const val DEBUG: String = "debug"
     const val RELEASE: String = "release"
-    const val buildBrand = Build.Brand.MyTel
+    const val buildBrand = Build.Brand.MyApp
 }
 
 object MyTelConfig {
-    const val applicationName = "MyTel"
-    const val applicationId = "com.mytel.android"
+    const val applicationName = "BaseKotlin"
+    const val applicationId = "com.toan_mobile.basekotlin"
 }
 
 object SdkConfig {
-    const val applicationName = "MyTelSdk"
-    const val applicationId = "com.mytel.sdk"
+    const val applicationName = "ModuleSdk"
+    const val applicationId = "com.toan_mobile.sdk"
 }
 
 interface BuildType {

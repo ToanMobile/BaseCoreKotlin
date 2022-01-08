@@ -95,18 +95,18 @@ internal fun Project.configureAndroidApp() = this.extensions.getByType<BaseExten
         create(Build.Env.production) {
             dimension = Build.Env.value
         }
-        if (GradleConfig.buildBrand == Build.Brand.MyTel) {
+        if (GradleConfig.buildBrand == Build.Brand.MyApp) {
             create(Build.Env.stg) {
                 dimension = Build.Env.value
             }
         }
-        if (GradleConfig.buildBrand == Build.Brand.MyTel) {
+        if (GradleConfig.buildBrand == Build.Brand.MyApp) {
             create(Build.Env.production_dev) {
                 dimension = Build.Env.value
             }
         }
-        if (GradleConfig.buildBrand == Build.Brand.MyTel) {
-            create(Build.Brand.MyTel) {
+        if (GradleConfig.buildBrand == Build.Brand.MyApp) {
+            create(Build.Brand.MyApp) {
                 dimension = Build.Brand.value
                 resValue(type = "string", name = "maps_api_key", value = "AIzaSyD2gVRUBJFwENILQaP9Vx_3LAsE7aaTeOQ")
                 resValue(type = "string", name = "provider_facebook", value = "com.facebook.app.FacebookContentProvider335442037583549")

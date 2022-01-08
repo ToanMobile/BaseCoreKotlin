@@ -38,8 +38,8 @@ android {
     flavorDimensions.clear()
     flavorDimensions.addAll(listOf(Build.Brand.value, Build.Env.value))
     productFlavors {
-        if (GradleConfig.buildBrand == Build.Brand.MyTel) {
-            getByName(Build.Brand.MyTel) {
+        if (GradleConfig.buildBrand == Build.Brand.MyApp) {
+            getByName(Build.Brand.MyApp) {
                 dimension = Build.Brand.value
                 applicationId = MyTelConfig.applicationId
             }
@@ -62,7 +62,7 @@ android {
             val appName = if (GradleConfig.buildBrand == Build.Brand.Sdk) SdkConfig.applicationName else MyTelConfig.applicationName
             resValue("string", "app_name", appName)
         }
-        if (GradleConfig.buildBrand == Build.Brand.MyTel) {
+        if (GradleConfig.buildBrand == Build.Brand.MyApp) {
             getByName(Build.Env.stg) {
                 dimension = Build.Env.value
                 applicationIdSuffix = EnvTypeStaging.applicationIdSuffix
@@ -70,7 +70,7 @@ android {
                 resValue("string", "app_name", "${MyTelConfig.applicationName} ${EnvTypeStaging.environment}")
             }
         }
-        if (GradleConfig.buildBrand == Build.Brand.MyTel) {
+        if (GradleConfig.buildBrand == Build.Brand.MyApp) {
             getByName(Build.Env.production_dev) {
                 dimension = Build.Env.value
                 applicationIdSuffix = EnvTypeProductionDev.applicationIdSuffix
@@ -106,7 +106,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 }
 
 dependencies {
-    //implementation(nvilabsSDK)
+    implementation(moduleSDK)
     implementation(Dependencies.netAloBase)
     implementAll(AppDependencies.kotlin)
     kaptAll(AnnotationDependencies.kapt_library)

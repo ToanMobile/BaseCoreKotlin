@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /**Created by NetaloTeamAndroid on 2020
+  ~ Company: Netacom.
+  ~  **/
+  -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_open_chat"
+    app:startDestination="@id/conversationFragment">
+
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.toan_mobile.module.ui.profile.ProfileFragment"
+        android:label="callFragment"
+        tools:layout="@layout/fragment_call">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.toan_mobile.module.ui.conversation.ConversationFragment"
+        android:label="conversationFragment"
+        tools:layout="@layout/fragment_conversation">
+        <!--<action
+            android:id="@+id/chatAction"
+            app:destination="@id/chatFragment" />
+
+        <action
+            android:id="@+id/searchConversationAction"
+            app:destination="@id/searchConversationFragment" />
+
+        <action
+            android:id="@+id/deleteGroupAction"
+            app:destination="@id/deleteGroupDialog" />
+
+        <action
+            android:id="@+id/newMessageAction"
+            app:destination="@id/newMessageFragment" />
+-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.toan_mobile.module.ui.contact.ContactFragment"
+        android:label="contactFragment"
+        tools:layout="@layout/fragment_contact">
+
+        <!--<action
+            android:id="@+id/addContactAction"
+            app:destination="@id/addContactFragment" />
+
+        <action
+            android:id="@+id/contactDetailAction"
+            app:destination="@id/contactFragmentDetail" />
+
+        <action
+            android:id="@+id/inviteAction"
+            app:destination="@id/inviteFragment" />
+
+        <action
+            android:id="@+id/contactFragmentInfoAction"
+            app:destination="@id/contactFragmentInfo" />
+
+        <action
+            android:id="@+id/sortContactAction"
+            app:destination="@id/sortContactDialog" />-->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.toan_mobile.module.ui.profile.ProfileFragment"
+        android:label="profileFragment"
+        tools:layout="@layout/fragment_profile">
+
+    </fragment>
+
+    <!--&lt;!&ndash;CONTACT&ndash;&gt;
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.nvilabs.sdk.ui.contact.addcontact.AddContactFragment"
+        android:label="addContactFragment"
+        tools:layout="@layout/fragment_add_contact">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactFragmentDetail"
+        android:name="com.nvilabs.sdk.ui.contact.contactdetail.ContactDetailFragment"
+        android:label="contactFragmentDetail"
+        tools:layout="@layout/fragment_contact_detail">
+        <argument
+            android:name="contact"
+            app:argType="com.nvilabs.sdk.data.model.ui.NeUser"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inviteFragment"
+        android:name="com.nvilabs.sdk.ui.contact.invite.InviteFragment"
+        android:label="inviteFragment"
+        tools:layout="@layout/fragment_invite">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactFragmentInfo"
+        android:name="com.nvilabs.sdk.ui.contact.contactinfo.ContactInfoFragment"
+        android:label="contactFragmentInfo"
+        tools:layout="@layout/fragment_contact_info">
+        <argument
+            android:name="contact"
+            app:argType="com.nvilabs.sdk.data.model.ui.NeUser"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchConversationFragment"
+        android:name="com.nvilabs.sdk.ui.conversation.search.SearchConversationFragment"
+        android:label="searchConversationFragment"
+        tools:layout="@layout/fragment_search_conversation">
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/sortContactDialog"
+        android:name="com.nvilabs.sdk.ui.contact.sort.SortContactDialog"
+        android:label="sortContactDialog"
+        tools:layout="@layout/dialog_sort_contact" />
+    &lt;!&ndash;CONTACT&ndash;&gt;
+
+    &lt;!&ndash; CHAT&ndash;&gt;
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.nvilabs.sdk.ui.chat.ChatFragment"
+        android:label="chatFragment"
+        tools:layout="@layout/fragment_chat">
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/deleteGroupDialog"
+        android:name="com.nvilabs.sdk.ui.conversation.deletegroup.DeleteGroupDialog"
+        android:label="deleteGroupDialog"
+        tools:layout="@layout/dialog_delete_group" >
+        <argument
+            android:name="group"
+            app:argType="com.nvilabs.sdk.data.model.ui.NeGroup"
+            app:nullable="true" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/newMessageFragment"
+        android:name="com.nvilabs.sdk.ui.conversation.newmessage.NewMessageFragment"
+        android:label="newMessageFragment"
+        tools:layout="@layout/fragment_new_message">
+
+        <action
+            android:id="@+id/addContactAction"
+            app:destination="@id/addContactFragment" />
+
+        <action
+            android:id="@+id/chatAction"
+            app:destination="@id/chatFragment" />
+
+        <action
+            android:id="@+id/contactDetailAction"
+            app:destination="@id/contactFragmentDetail" />
+
+        <action
+            android:id="@+id/newGroupAction"
+            app:destination="@id/newGroupFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchChatFragment"
+        android:name="com.nvilabs.sdk.ui.conversation.search.searchchat.SearchChatFragment"
+        android:label="searchChatFragment"
+        tools:layout="@layout/fragment_search_chat">
+
+        <action
+            android:id="@+id/chatAction"
+            app:destination="@id/chatFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/newGroupFragment"
+        android:name="com.nvilabs.sdk.ui.conversation.newgroup.NewGroupFragment"
+        android:label="newGroupFragment"
+        tools:layout="@layout/fragment_new_group">
+
+        <action
+            android:id="@+id/confirmNewGroupAction"
+            app:destination="@id/confirmNewGroupFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmNewGroupFragment"
+        android:name="com.nvilabs.sdk.ui.conversation.newgroup.ConfirmNewGroupFragment"
+        android:label="confirmNewGroupFragment"
+        tools:layout="@layout/fragment_confirm_new_group">
+
+        <argument
+            android:name="contacts"
+            app:argType="com.nvilabs.sdk.data.model.ui.NeUsers"
+            app:nullable="true" />
+
+    </fragment>-->
+    <!-- CHAT-->
+</navigation>

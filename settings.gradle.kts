@@ -6,7 +6,7 @@
 
 @file:Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 
-include(":module")
+include(":ModuleSDK")
 
 
 val app = "app"
