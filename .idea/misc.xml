@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../Users/toanmobile/.gradle/caches/transforms-3/c2a8f4c0fe30f9784848813459b4c578/transformed/jetified-NetAloBaseChat-Dev-2.0.15/res/drawable-night-v8/all_style_bottom_navigation_item_icon.xml" value="0.126" />
         <entry key="ModuleSDK/src/main/res-screen/Call/layout/fragment_call.xml" value="0.25407608695652173" />
+        <entry key="ModuleSDK/src/main/res-screen/Contact/layout/fragment_contact.xml" value="0.2421875" />
+        <entry key="ModuleSDK/src/main/res/drawable/all_style_bottom_navigation_item_icon.xml" value="0.126" />
         <entry key="ModuleSDK/src/main/res/menu/bottom_navigation.xml" value="0.34739583333333335" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25407608695652173" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="module/src/main/res/layout/activity_main.xml" value="0.19701086956521738" />
       </map>
     </option>
